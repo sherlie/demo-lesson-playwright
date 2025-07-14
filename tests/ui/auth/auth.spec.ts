@@ -12,11 +12,11 @@ test('Sign in button with correct credentials', async ({ page }) => {
   await expect(signInButton).toBeDisabled()
   await expect(usernameError).toBeVisible()
   */
- const authPage = new LoginPage(page)
- await authPage.open()
- const orderPage = await authPage.signIn()
- await expect(orderPage.statusButton).toBeVisible()
- /*
+  const authPage = new LoginPage(page)
+  await authPage.open()
+  const orderPage = await authPage.signIn()
+  await expect(orderPage.statusButton).toBeVisible()
+  /*
  await authPage.usernameField.fill('hello')
  await authPage.passwordField.fill('12345678')
  await expect(authPage.signInButton).toBeDisabled()
